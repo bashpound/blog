@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "for log",
+  "main": "index.js",
+  "authors": {
+    "name": "Bashpound",
+    "email": "eunhackjang@gmail.com"
+  },
+  "repository": "github.com/bashpound/blog/",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "docs:build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-pwa": "^1.0.0-rc.1",
+    "@vuepress/theme-blog": "^2.3.1",
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "yarn": "^1.22.4"
+  }
+}
