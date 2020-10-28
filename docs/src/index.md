@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /images/logo-padd.jpg
-tagline: 검색하다가 지쳐서 만든 블로그 for log
+tagline: 검색하다가 지쳐서 만든 블로그 for log test
 actionText: Go →
 actionLink: /Blog/
 features:
