@@ -41,6 +41,10 @@ module.exports = {
       {
         text: 'Blog',
         link: '/article/',
+      },
+      {
+        text: 'About',
+        link: '/about/',
       }
     ],
     sidebar: {
@@ -69,6 +73,9 @@ module.exports = {
         }
       ],
     }
+  },
+  markdown: {
+    lineNumbers: true
   },
 
   /**
