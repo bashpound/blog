@@ -3,13 +3,13 @@ home: true
 heroImage: /images/logo-padd.jpg
 tagline: 검색하다가 지쳐서 만든 블로그 for log test
 actionText: Go →
-actionLink: /Blog/
+actionLink: /article/
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
+- title: Tech
+  details: 기술 문서
+- title: Dev.log
+  details: 개발 기록
+- title: Life.log
+  details: 개발자 기록 
 footer: Made by Bashpound
 ---

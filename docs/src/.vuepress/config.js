@@ -18,9 +18,11 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3e77b5' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', contesnt: 'black' }],
+    ['link', { rel: "shortcut icon", href: "favicon.ico"}],
+    ['script', { async: "true", src: "https://www.googletagmanager.com/gtag/js?id=G-SFLYNCGZNJ"}],
+    ['script', { src: "/ga/ga.js"}]
   ],
 
   /**
@@ -29,25 +31,22 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    logo: '/images/logo.jpg',
+    lastUpdated: 'Last Updated',
+    repo: 'bashpound',
     editLinks: false,
-    docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    smoothScroll: true,
     nav: [
       {
         text: 'Blog',
-        link: '/blog/',
-      },
-      {
-        text: 'More',
-        link: 'https://github.com/bashpound'
+        link: '/article/',
       }
     ],
     sidebar: {
-      '/blog/': [
+      '/article/': [
         {
-          title: 'Patterns',
+          title: 'Tech',
           collapsable: true,
           children: [
             '',
@@ -55,10 +54,17 @@ module.exports = {
           ]
         },
         {
-          title: 'Dev. log',
+          title: 'Dev.log',
           collapsable: true,
           children: [
             'spring-vue',
+          ]
+        },
+        {
+          title: 'Life.log',
+          collapsable: true,
+          children: [
+            'life',
           ]
         }
       ],
@@ -74,6 +80,12 @@ module.exports = {
     '@vuepress/pwa', {
       serviceWorker: true,
       updatePopup: true
+    },
+    [
+    '@vuepress/google-analytics',
+    {
+      'ga': 'G-SFLYNCGZNJ'
     }
+  ]
   ]
 }

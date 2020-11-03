@@ -1136,6 +1136,13 @@
   dependencies:
     lodash.debounce "^4.0.8"
 
+"@vuepress/plugin-back-to-top@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.7.1.tgz#8bdc4a2de95f8244f167b3b3066c2610b88aabeb"
+  integrity sha512-Hw/5kQjqtkHEstifcq4gpdVwS38C3ecruLCUibq3YEES6DJUYZ8tN1oo3FTugYgpXsyn3HxWftyalozcZ2IutA==
+  dependencies:
+    lodash.debounce "^4.0.8"
+
 "@vuepress/plugin-blog@^1.9.2":
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-blog/-/plugin-blog-1.9.2.tgz#d463a218bf54b51a07b87eb703dc1cc9eddeef3c"
@@ -1150,6 +1157,11 @@
     vuepress-plugin-mailchimp "^1.4.1"
     vuepress-plugin-sitemap "^2.3.1"
 
+"@vuepress/plugin-google-analytics@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-1.7.1.tgz#c337e13c8a27f6fea911a04db22a3f3596a571fb"
+  integrity sha512-27fQzRMsqGYpMf+ruyhsdfLv/n6z6b6LutFLE/pH66Itlh6ox9ew31x0pqYBbWIC/a4lBfXYUwFvi+DEvlb1EQ==
+
 "@vuepress/plugin-last-updated@1.5.3":
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-last-updated/-/plugin-last-updated-1.5.3.tgz#1f2dcc653d3b829d65094433395f9a92642eb301"
@@ -1163,6 +1175,13 @@
   integrity sha512-ALjPi8CGLNKlViFPIWS2iD887hacYT28tLq3CaQOJaEP3/V6yv4kyqpDiX2kN7xB9TrIKjxnk1p916Ze3WX2zA==
   dependencies:
     medium-zoom "^0.4.0"
+
+"@vuepress/plugin-medium-zoom@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.7.1.tgz#170598bba9941dbd047cffaa659023db8f46e337"
+  integrity sha512-pYI6myr4bi9SYzvR6D4r7+YpjpXgudCbontXKZIARS7hJ+kVBapVYnetrbeNFKq+7a/QGOkAuAK2j39dQLaMXQ==
+  dependencies:
+    medium-zoom "^1.0.4"
 
 "@vuepress/plugin-nprogress@1.0.0":
   version "1.0.0"
@@ -5105,6 +5124,11 @@ medium-zoom@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-0.4.0.tgz#8e13c9b754903c0c903220611af0d3cd373a4222"
   integrity sha512-0z7yMfd6I1BTCAa8QaR4cp5AqDkQD571GzhHIbbfefKEssGLSvs+4Xai/itOAncm4FBlF5gUoMQ22yW9/f8Sig==
+
+medium-zoom@^1.0.4:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.6.tgz#9247f21ca9313d8bbe9420aca153a410df08d027"
+  integrity sha512-UdiUWfvz9fZMg1pzf4dcuqA0W079o0mpqbTnOz5ip4VGYX96QjmbM+OgOU/0uOzAytxC0Ny4z+VcYQnhdifimg==
 
 memory-fs@^0.4.1:
   version "0.4.1"
