@@ -10,7 +10,7 @@ module.exports = {
    */
   description: description,
   port: 3000,
-  base: "/blog/",
+  base: "",
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -22,7 +22,8 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', contesnt: 'black' }],
     ['link', { rel: "shortcut icon", href: "favicon.ico"}],
     ['script', { async: "true", src: "https://www.googletagmanager.com/gtag/js?id=G-SFLYNCGZNJ"}],
-    ['script', { src: "/ga/ga.js"}]
+    ['script', { src: "/ga/ga.js"}],
+    ['script', { 'data-ad-client': 'ca-pub-1383612348871633', async:true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'}]
   ],
 
   /**

@@ -47,7 +47,7 @@ public class Bashpound {
 </code-group>
 
 
-[**화학**](http://yonsei.ac.kr) 전공, [**금속학**](http://postech.ac.kr) 석사를 마치고 [**전자재료회사**](http://dongjin.com)에 연구원으로 입사, 이후 [**프랑스 유리 회사**](http://saint-gobain.com)로 이직한 뒤 박막소재 연구개발을 하다가 [**AI/Web 개발자**](http://smartjackwp.com)로 전직한, 그러한 성향의 개발자.
+[**화학**](http://yonsei.ac.kr) 전공, [**금속학**](http://postech.ac.kr) 석사를 마치고 [**전자재료회사**](http://dongjin.com)에 연구원으로 입사, 이후 [**프랑스 유리 회사**](http://saint-gobain.com)로 이직한 뒤 박막 연구를 하다가 [**AI/Web 개발자**](http://smartjackwp.com)로 전직한, 그러한 성향의 개발자.
 
 알고리즘, AI, Web, Quantum computing, 상대성 이론, 천문학, <del>고수익 사업</del>에 관심
 

@@ -1273,7 +1273,7 @@
     vue-feather-icons "^4.21.0"
     vuepress-plugin-smooth-scroll "^0.0.9"
 
-"@vuepress/theme-default@1.7.1":
+"@vuepress/theme-default@1.7.1", "@vuepress/theme-default@^1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@vuepress/theme-default/-/theme-default-1.7.1.tgz#36fee5bb5165798c0082c512cbf4d94352260d97"
   integrity sha512-a9HeTrlcWQj3ONHiABmlN2z9TyIxKfQtLsA8AL+WgjN3PikhFuZFIJGzfr+NLt67Y9oiI+S9ZfiaVyvWM+7bWQ==
@@ -8006,7 +8006,7 @@ vuepress-plugin-smooth-scroll@^0.0.9:
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
-vuepress@^1.5.3:
+vuepress@^1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-1.7.1.tgz#bb0e139d8c407a0b5aa962cf9577832a5808937e"
   integrity sha512-AdA3do1L4DNzeF8sMTE+cSUJ5hR/6f3YujU8DVowi/vFOg/SX2lJF8urvDkZUSXzaAT6aSgkI9L+B6D+i7SJjA==
