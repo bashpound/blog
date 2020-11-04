@@ -8,14 +8,14 @@
     >
       <img
         v-if="$site.themeConfig.logo"
-        class="logo"
+        class="logo rotated"
         :src="$withBase($site.themeConfig.logo)"
         :alt="$siteTitle"
       >
       <span
         v-if="$siteTitle"
         ref="siteName"
-        class="site-name"
+        class="site-name animated"
         :class="{ 'can-hide': $site.themeConfig.logo }"
       >{{ $siteTitle }}</span>
     </RouterLink>
@@ -95,6 +95,36 @@ function css (el, property) {
 <style lang="stylus">
 $navbar-vertical-padding = 0.7rem
 $navbar-horizontal-padding = 1.5rem
+
+.animated
+  animation-duration 1s
+  animation-name bounce 
+  animation-iteration-count 1
+
+.rotated
+  animation-name: rotate 
+  animation-duration: 1s
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360*4deg)
+  }
+  100% {
+    transform: rotate(0)
+  }
+}
+
+@keyframes bounce {
+  from {
+    margin-left: 200px;
+    opacity: 0;
+  }
+
+  to {
+    margin: 0;
+  }
+}
+
 
 .navbar
   padding $navbar-vertical-padding $navbar-horizontal-padding

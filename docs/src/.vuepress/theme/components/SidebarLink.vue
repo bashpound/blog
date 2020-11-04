@@ -116,11 +116,15 @@ a.sidebar-link
   line-height 1.4
   width: 100%
   box-sizing: border-box
+  transition: 0.3s ease-in-out
   &:hover
     color $accentColor
+    background-color rgba(42, 104, 189, 0.06)
+    transition: 0.3s ease-in-out
   &.active
     font-weight 600
     color $accentColor
+    background-color rgba(42, 104, 189, 0.06)
     border-left-color $accentColor
   .sidebar-group &
     padding-left 2rem
