@@ -1,14 +1,17 @@
 <template>
+<div>
   <main
     class="home"
     :aria-labelledby="data.heroText !== null ? 'main-title' : null"
   >
+  <hero class="hero"/>
+
     <header class="hero">
-      <img
+      <!--<img
         v-if="data.heroImage"
         :src="$withBase(data.heroImage)"
         :alt="data.heroAlt || 'hero'"
-      >
+      >-->
 
       <h1
         v-if="data.heroText !== null"
@@ -34,7 +37,6 @@
         />
       </p>
     </header>
-
     <div
       v-if="data.features && data.features.length"
       class="features"
@@ -58,6 +60,7 @@
       {{ data.footer }}
     </div>
   </main>
+</div>
 </template>
 
 <script>
@@ -84,6 +87,7 @@ export default {
 </script>
 
 <style lang="stylus">
+
 .home
   padding $navbarHeight 2rem 0
   max-width $homePageWidth

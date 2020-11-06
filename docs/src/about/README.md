@@ -52,3 +52,5 @@ public class Bashpound {
 알고리즘, AI, Web, Quantum computing, 상대성 이론, 천문학, <del>고수익 사업</del>에 관심
 
 **:email: eunhackjang@gmail.com**
+
+<coder /> 

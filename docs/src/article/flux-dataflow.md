@@ -12,17 +12,33 @@
 
 가장 원시적인 상태 관리는 유스케이스(Route, Page view)등 의 이동 단위마다 이전 데이터의 정보를 그대로 전송하는 것에서 시작한다. 당연히 어플리케이션의 규모가 조금만 커져도 데이터 흐름 다이어그램을 기술할 수 없을 정도로 복잡해지기 때문에 보통의 상태 관리는 Spring등의 프레임워크를 이용하여 컨테이너 형태 혹은 컨테이너와 세션이 결합된 형태로 중앙 컨테이너에서 뽑아 쓰는 형태로 활용한다.
 
-사용자의 시점에서 상태 관리는 세션에서 시작한다. 이는 웹페이지가 사용자를 구분하는 것에서부터 시작한다는 의미이다. 이 구분은 트랜잭션이 발생할 경우 매우 중대해진다. 하지만 세션 안에 저장할 수 있는 정보는 한계가 있다. 따라서 고수준의 웹 서비스를 구현하기 위해 다양한 상태 관리 기법이 등장했다. Flux dataflow도 그 중 하나로써 Facebook이 발표한 데이터 패턴이다. 다음의 링크는 페이스북에서 공식 발표한 introduction이니 참고하자. [Facebook - FLUX dataflow](https://www.youtube.com/embed/nYkdrAPrdcw)
+사용자의 시점에서 상태 관리는 세션에서 시작한다. 이는 웹페이지가 사용자를 구분하는 것에서부터 시작한다는 의미이다. 이 구분은 트랜잭션이 발생할 경우 매우 중대해진다. 하지만 세션 안에 저장할 수 있는 정보는 한계가 있다. 따라서 고수준의 웹 서비스를 구현하기 위해 다양한 상태 관리 기법이 등장했다. Flux dataflow도 그 중 하나로써 Facebook이 발표한 데이터 패턴이다. 다음의 링크는 페이스북에서 공식 발표한 introduction이니 참고하자. 
+
+<p align="middle" class="media">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nYkdrAPrdcw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /> Facebook - FLUX dataflow
+
+</p>
 
 ## Basic Lifecycle - 둘러보기
 
 Flux 패턴의 가장 큰 특징은 단방향 흐름이라는 것이고 Flux 패턴의 의의라고 강조하고 있다. 각 노드들은 고유의 입/출력을 가지고 있으며 독립적이다. Action은 데이터 타입 및 데이터를 포함한 경량의 객체이다. User interaction은 view에서 이뤄지는데,  이는 새로운 액션을 전파한다. 즉,
 
-(이미지 준비중)
+<mermaid align="middle">
+%%{init: {'theme': 'neutral', 'themeVariables': { 'primaryColor': '#ff0000'}}}%%
+graph LR
+    A[Action] --> B[Dispatcher] --> C[Store] --> D[View]
+</mermaid>
+
 ###  Lifecycle #1
 위 라이프사이클이 무한히 반복되는 것과 추상적 개념이 같다.
 
-(이미지 준비중)
+<mermaid align="middle">
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#ff0000'}}}%%
+graph LR
+    A[Action] --> B[Dispatcher] --> C[Store] --> D[View]
+    D[View] --> B[Dispatcher]
+</mermaid>
+
 ### Lifecycle #2
 위는 새로운 액션이 적극적으로 전파될 수도 있음을 의미한다. 쉽게 말해, Action이 일어나면  View 가 송출되고,  View에서 다시 사용자의 인터렉션에 의해 Action이 발생되고 이것이 반복되는 흐름을 말한다. 여기까지는 다른 데이터흐름 모델과 크게 다를 것이 없다. 중요한 것은 단방향 흐름을 강제함으로써 데이터 흐름을 직관적으로 이해할 수 있게끔 설계하는 것, 그리고 나머지는 Dispatcher와 Store의 역할이다.
 
@@ -38,7 +54,9 @@ This structure allows us to reason easily about our application in a way that is
 
 ## MVC pattern?
 
- Flux 패턴이 MVC와 도대체 무엇이 다른지 궁금해질 타이밍이 왔다. 하지만 분명 명확한 차이점이 있다. 데이터가 한 방향으로 전파된다는 점, 그리고 비동기적 상태 변화 등. 이러한 특징들이 기존 MVC패턴과 대비해 어떤 중대한 위력을 발휘하는지는 아래 영상에서 자세히 설명하고 있으니 참고하자. [React and Flux](https://www.youtube.com/embed/Bic_sFiaNDI)
-
-
+ Flux 패턴이 MVC와 도대체 무엇이 다른지 궁금해질 타이밍이 왔다. 하지만 분명 명확한 차이점이 있다. 데이터가 한 방향으로 전파된다는 점, 그리고 비동기적 상태 변화 등. 이러한 특징들이 기존 MVC패턴과 대비해 어떤 중대한 위력을 발휘하는지는 아래 영상에서 자세히 설명하고 있으니 참고하자.
+ 
+ <p align="middle" class="media">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/Bic_sFiaNDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br /> React and Flux
+ </p>
 
