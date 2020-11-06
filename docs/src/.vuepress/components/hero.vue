@@ -14,7 +14,7 @@ export default {
     const scene = new THREE.Scene();
 
 scene.add(camera);
-renderer.setSize(400, 400)
+renderer.setSize(300, 300)
 renderer.setClearColor(0xffffff, 1)
 $bashpound.append(renderer.domElement)
 

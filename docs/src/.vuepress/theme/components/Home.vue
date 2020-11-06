@@ -4,7 +4,7 @@
     class="home"
     :aria-labelledby="data.heroText !== null ? 'main-title' : null"
   >
-  <hero class="hero"/>
+    
 
     <header class="hero">
       <!--<img
@@ -12,7 +12,7 @@
         :src="$withBase(data.heroImage)"
         :alt="data.heroAlt || 'hero'"
       >-->
-
+      <hero />
       <h1
         v-if="data.heroText !== null"
         id="main-title"
