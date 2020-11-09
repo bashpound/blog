@@ -63,6 +63,7 @@ module.exports = {
           collapsable: true,
           children: [
             'spring-vue',
+            'spring-react'
           ]
         },
         {
