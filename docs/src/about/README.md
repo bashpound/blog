@@ -1,3 +1,8 @@
+---
+about: true
+pageClass: about
+---
+
 ## Bashpound.about
 <code-group>
 <code-block title="JS">

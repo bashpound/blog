@@ -38,7 +38,7 @@
       </template>
       <template #bottom>
         <slot name="page-bottom" />
-        <Disqus class="theme-default-content" />
+        <Disqus v-if="!$page.frontmatter.about" class="theme-default-content" />
       </template>
       
     </Page>

@@ -1,9 +1,8 @@
 <template>
       <svg
-        width="1042"
-        height="555"
+        width="100%"
+        height="auto"
         viewBox="0 0 1042 555"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <g id="undraw_programming_2svr 1" clipPath="url(#clip0)">
@@ -342,6 +341,7 @@
 </script>
 
 <style scoped>
+
 #person {
   animation: moving 1s ease-in-out 4 alternate;
   transform-origin: center;
