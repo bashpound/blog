@@ -15,7 +15,7 @@
 사용자의 시점에서 상태 관리는 세션에서 시작한다. 이는 웹페이지가 사용자를 구분하는 것에서부터 시작한다는 의미이다. 이 구분은 트랜잭션이 발생할 경우 매우 중대해진다. 하지만 세션 안에 저장할 수 있는 정보는 한계가 있다. 따라서 고수준의 웹 서비스를 구현하기 위해 다양한 상태 관리 기법이 등장했다. Flux dataflow도 그 중 하나로써 Facebook이 발표한 데이터 패턴이다. 다음의 링크는 페이스북에서 공식 발표한 introduction이니 참고하자. 
 
 <p align="middle" class="media">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nYkdrAPrdcw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /> Facebook - FLUX dataflow
+<iframe width="360" height="240" src="https://www.youtube.com/embed/nYkdrAPrdcw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /> Facebook - FLUX dataflow
 
 </p>
 
@@ -57,6 +57,6 @@ This structure allows us to reason easily about our application in a way that is
  Flux 패턴이 MVC와 도대체 무엇이 다른지 궁금해질 타이밍이 왔다. 하지만 분명 명확한 차이점이 있다. 데이터가 한 방향으로 전파된다는 점, 그리고 비동기적 상태 변화 등. 이러한 특징들이 기존 MVC패턴과 대비해 어떤 중대한 위력을 발휘하는지는 아래 영상에서 자세히 설명하고 있으니 참고하자.
  
  <p align="middle" class="media">
- <iframe width="560" height="315" src="https://www.youtube.com/embed/Bic_sFiaNDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br /> React and Flux
+ <iframe width="360" height="240" src="https://www.youtube.com/embed/Bic_sFiaNDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br /> React and Flux
  </p>
 

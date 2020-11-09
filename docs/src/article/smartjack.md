@@ -37,7 +37,7 @@
 지원서를 내자 마자 며칠 내로 연락이 왔다. 회사에서도 나의 존재를 신경 쓰고 있었다고 한다. 그리고는 당연하게도 코딩테스트 링크가 내려왔고.. 그 압박감과 스트레스는 아직도 기억한다. 1주일 동안 2개의 과제형 코딩테스트와 2개의 알고리즘 테스트를 병행했던 날들을. 거의 1주일 동안 새벽 5시에 잠들며 작업했던 것 같다. 3일 만에 ~~해본 적이 없는~~ 모듈을 활용하여 웹 페이지를 만들어버린 것이다. 
 
 <p align="middle" class="media">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Zh6qj9Tr5Tk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="youtube" src="https://www.youtube.com/embed/Zh6qj9Tr5Tk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 알고리즘 대회를 휩쓰셨다는 CTO님, 그리고 대표님도 우리 개발자들 엄청 잘 한다고.. 자부심이 이렇게 대단한데 꼴랑 6개월 학원 다닌 내가 보여줄 수 있는 것은 화학 그리고 화학 업계를 좀 안다는 것, 그리고 학습 역량과 성장 가능성 밖에는 없다는 일념 하나로 제작을 시작했다. 나 빨리 배워요. 라고 어떻게든 어필해야 했다. 그냥 막 만들때와는 달리 지금 만든 것이 면접에 고대로 다 질문이 들어올 것까지 감안하여 만들려니 스트레스가 이만 저만.. 게다가 부트로 만들때완 달리 순수 스프링과 톰캣을 연결하고 또 지원하지 않는 Vue SPA까지 순수 스프링으로 끼얹으려니 정말 머리가 터지기 일보 직전. 그러나 나는 해냈다.
