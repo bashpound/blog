@@ -97,5 +97,12 @@ module.exports = {
       'ga': 'G-SFLYNCGZNJ'
     }
   ]
-  ]
+  ],
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@img': '/'
+      }
+    }
+  }
 }
