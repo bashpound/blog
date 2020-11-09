@@ -63,14 +63,15 @@ module.exports = {
           collapsable: true,
           children: [
             'spring-vue',
-            'spring-react'
+            'spring-react',
+            'idx'
           ]
         },
         {
           title: 'Life.log',
           collapsable: true,
           children: [
-            'life',
+            'smartjack',
           ]
         }
       ],
