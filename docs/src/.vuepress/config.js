@@ -64,7 +64,8 @@ module.exports = {
           children: [
             'spring-vue',
             'spring-react',
-            'idx'
+            'idx',
+            'detection'
           ]
         },
         {
