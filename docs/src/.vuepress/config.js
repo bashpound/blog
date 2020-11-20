@@ -72,7 +72,7 @@ module.exports = {
           title: 'Life.log',
           collapsable: true,
           children: [
-            'smartjack',
+            'smartjack'
           ]
         }
       ],
